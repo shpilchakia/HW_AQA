@@ -1,8 +1,6 @@
-package com.demoqa;
+package com.examples;
 
 import org.junit.jupiter.api.*;
-
-import java.lang.module.Configuration;
 
 public class DemoJUnitTest {
 
