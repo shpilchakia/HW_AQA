@@ -1,4 +1,4 @@
-package com.github;
+package github;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
