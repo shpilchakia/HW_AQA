@@ -26,7 +26,6 @@ public class RegistrationDemoQA {
 
         String userName = "Igor";
 
-
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         Selenide.executeJavaScript("$('#fixedban').remove"); // С помощью селенида убрать рекламу на странице с помощью языка JQuery
