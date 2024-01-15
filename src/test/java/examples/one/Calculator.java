@@ -1,4 +1,4 @@
-package examples;
+package examples.one;
 
 public class Calculator {
     public int sum(int a, int b) {

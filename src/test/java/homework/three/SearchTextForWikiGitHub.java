@@ -1,4 +1,4 @@
-package github;
+package homework.three;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ public class SearchTextForWikiGitHub {
     }
 
     @Test
-    void SearchTextGitHubWiki() {
+    void searchTextGitHubWiki() {
         open("https://github.com/selenide/selenide");
         $("#wiki-tab").shouldBe(visible).click();
         $("#wiki-body").shouldHave(text("Soft assertions"));
