@@ -2,6 +2,7 @@ package homework.two;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import homework.one.TestBase;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -11,15 +12,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationDemoQA {
-
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "chrome";
-        Configuration.browserSize = "1920x1080";
-        System.setProperty("webdriver.chrome.driver", "C:/WebDrivers/chromedriver120.0.6099.109.exe");
-    }
+public class RegistrationDemoQA extends TestBase {
 
     @Test
     void successfulRegistrationTest() {

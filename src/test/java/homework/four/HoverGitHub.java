@@ -1,6 +1,7 @@
 package homework.four;
 
 import com.codeborne.selenide.Configuration;
+import homework.one.TestBase;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -9,12 +10,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class HoverGitHub {
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.holdBrowserOpen = true;
-    }
+public class HoverGitHub extends TestBase {
 
     @Test
     void chooseSolutionsElement() {

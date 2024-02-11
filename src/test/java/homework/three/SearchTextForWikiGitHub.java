@@ -1,5 +1,6 @@
 package homework.three;
 
+import homework.one.TestBase;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -8,13 +9,7 @@ import static com.codeborne.selenide.Configuration.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class SearchTextForWikiGitHub {
-
-    @BeforeAll
-    static void beforeAll() {
-        browserSize = "1920x1080";
-        System.setProperty("webdriver.chrome.driver", "C:/WebDrivers/chromedriver120.0.6099.109.exe");
-    }
+public class SearchTextForWikiGitHub extends TestBase {
 
     @Test
     void searchTextGitHubWiki() {
