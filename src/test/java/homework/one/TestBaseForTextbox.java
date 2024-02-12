@@ -4,7 +4,7 @@ import com.codeborne.selenide.Configuration;
 import homework.five.pages.RegistrationPage;
 import org.junit.jupiter.api.BeforeAll;
 
-public class TestBase {
+public class TestBaseForTextbox {
     public RegistrationPage registrationPage = new RegistrationPage();
 
     @BeforeAll
@@ -15,4 +15,3 @@ public class TestBase {
         Configuration.holdBrowserOpen = true;
     }
 }
-
